@@ -10,6 +10,36 @@
   width: 100%;
 }
 
+// cta section
+.cta{
+  padding: 48px 24px 64px;
+  background-color: $bc-light-glay;
+  @include sp{
+    padding: 24px 24px 48px;
+  }
+  .cta-btn{
+    margin: 0 auto;
+  }
+}
+.cta__ttl{
+  font-size: 32px;
+  margin-bottom: 24px;
+  text-align: center;
+  font-weight: normal;
+  @include tab{
+    font-size: 24px;
+  }
+}
+.cta__description{
+  max-width: 640px;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 2;
+  margin-bottom: 32px;
+}
+// cta section end
+
 .cta-btn{
   padding: 24px 0;
   text-align: center;
@@ -18,8 +48,7 @@
   max-width: 496px;
   width: 100%;
   font-size: 20px;
-  font-weight: bold;
-  font-family: $ff-gothic;
+  font-weight: 600;
   line-height: 1;
   background-color: $ac-wine-red;
   transition: all 0.3s ease-in-out;
@@ -38,10 +67,11 @@
 }
 
 .section__ttl{
-  font-size: 48px;
+  font-size: 40px;
   font-weight: normal;
   margin-bottom: 24px;
   line-height: 1.1;
+  font-family: $ff-serif-en;
   @include tab{
     font-size: 36px;
   }
@@ -53,4 +83,32 @@
 .section__ttl-ja{
   display: block;
   font-size: 20px;
+}
+
+.header--detail{
+  background-color: $mc-black;
+  position: relative;
+}
+
+.section__ttl--detail{
+  font-size: 40px;
+  font-weight: normal;
+  margin-bottom: 24px;
+  line-height: 1.1;
+  font-family: $ff-serif-en;
+  text-align: center;
+  @include sp{
+    font-size: 30px;
+  }
+  span{
+    display: block;
+  font-size: 20px;
+  }
+}
+
+.order1{
+  order: 1;
+}
+.order2{
+  order:2;
 }
