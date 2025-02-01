@@ -451,6 +451,9 @@ select:focus {
   background-color: #000000;
   position: relative;
 }
+.header--detail .header__nav-links a {
+  border-bottom: 2px solid #000000;
+}
 
 .section__ttl--detail {
   font-size: 40px;
@@ -1039,4 +1042,68 @@ select:focus {
   .commitment__contents-img--detail img {
     margin-top: 0;
   }
+}
+
+.selection--detail {
+  padding: 48px 24px;
+}
+
+.selection__contents-ttl--detail {
+  text-align: center;
+  font-weight: normal;
+  font-size: 32px;
+  margin-bottom: 24px;
+}
+@media (max-width: 768px) {
+  .selection__contents-ttl--detail {
+    font-size: 24px;
+  }
+}
+
+.selection__contents--detail {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2%;
+}
+
+.selection__card--detail {
+  width: 32%;
+  margin-bottom: 48px;
+}
+@media (max-width: 992px) {
+  .selection__card--detail {
+    width: 46%;
+  }
+}
+@media (max-width: 768px) {
+  .selection__card--detail {
+    width: 100%;
+  }
+}
+.selection__card--detail img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 16px;
+}
+
+.selection__card-ttl--detail {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 16px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.selection__card-price--detail {
+  text-align: center;
+  margin-bottom: 16px;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.selection__card-description--detail {
+  padding: 0 16px;
+  text-align: justify;
+  font-size: 20px;
 }/*# sourceMappingURL=style.css.map */
