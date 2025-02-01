@@ -19,6 +19,7 @@
   gap: 2%;
 }
 .selection__card--detail{
+  position: relative;
   width: 32%;
   margin-bottom: 48px;
   @include tab{
@@ -32,6 +33,15 @@
     height: auto;
     margin-bottom: 16px;
   }
+}
+.selection__card-label--detail{
+  position: absolute;
+  left: -8px;
+  background-color: $ac-yellow;
+  padding: 4px 24px;
+  color: $bc-white;
+  transform: rotate(-25deg);
+
 }
 .selection__card-ttl--detail{
   text-align: center;
