@@ -14,6 +14,9 @@
 .inner--mask{
   background-color: rgba(54,54,54,0.6);
   padding: 240px 24px;
+  @include sp{
+    padding: 200px 24px;
+  }
 }
 .keyvisual__ttl{
   font-size: 48px;
@@ -26,6 +29,9 @@
 }
 .keyvisual__subttl{
   font-size: 24px;
+  @include sp{
+    font-size: 20px;
+  }
 }
 // keyvisual end
 
@@ -75,6 +81,7 @@
   text-align: justify;
   @include sp{
     margin-bottom: 24px;
+    font-size: 16px;
   }
 }
 .commitment__img{
@@ -203,6 +210,7 @@
     line-height: 1.3;
     @include sp{
       margin-bottom: 16px;
+      font-size: 16px;
     }
     &:last-child{
       margin-bottom: 0;

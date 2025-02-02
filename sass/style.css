@@ -501,6 +501,11 @@ select:focus {
   background-color: rgba(54, 54, 54, 0.6);
   padding: 240px 24px;
 }
+@media (max-width: 768px) {
+  .inner--mask {
+    padding: 200px 24px;
+  }
+}
 
 .keyvisual__ttl {
   font-size: 48px;
@@ -516,6 +521,11 @@ select:focus {
 
 .keyvisual__subttl {
   font-size: 24px;
+}
+@media (max-width: 768px) {
+  .keyvisual__subttl {
+    font-size: 20px;
+  }
 }
 
 .commitment {
@@ -578,6 +588,7 @@ select:focus {
 @media (max-width: 768px) {
   .commitment__description {
     margin-bottom: 24px;
+    font-size: 16px;
   }
 }
 
@@ -738,6 +749,7 @@ select:focus {
 @media (max-width: 768px) {
   .information__description li {
     margin-bottom: 16px;
+    font-size: 16px;
   }
 }
 .information__description li:last-child {
@@ -1163,6 +1175,11 @@ select:focus {
   padding: 0 16px;
   text-align: justify;
   font-size: 20px;
+}
+@media (max-width: 768px) {
+  .selection__card-description--detail {
+    font-size: 16px;
+  }
 }
 
 .information--detail {
