@@ -1,0 +1,63 @@
+.article{
+  padding: 24px 24px 64px;
+  background-color: $bc-light-glay;
+  @include sp{
+    padding: 24px 16px;
+  }
+}
+.article__label{
+  margin-bottom: 24px;
+  @include sp{
+    margin-bottom: 16px;
+    padding-left: 24px;
+  }
+  a{
+    color: $mc-light-black;
+    transition: all 0.1s ease-in-out;
+    &:hover{
+      border-bottom: 1px solid $mc-light-black;
+    }
+  }
+}
+.article__card{
+  padding: 48px;
+  background-color: $bc-white;
+  @include sp{
+    padding: 16px;
+  }
+}
+.article__card-ttl{
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 24px;
+  @include sp{
+    margin-bottom: 16px;
+  }
+}
+.article__card-day{
+  margin-bottom: 24px;
+  @include sp{
+    margin-bottom: 16px;
+  }
+}
+.article__card-img{
+  margin-bottom: 24px;
+  @include sp{
+    margin-bottom: 16px;
+  }
+  img{
+    width: 100%;
+    height: 440px;
+    object-fit: cover;
+    @include sp{
+      height: 324px;
+    }
+  }
+}
+.article__card-text{
+  margin-bottom: 24px;
+  line-height: 2;
+}
+.bold{
+  font-weight: bold;
+}

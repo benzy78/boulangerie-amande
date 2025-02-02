@@ -104,10 +104,11 @@
   text-align: center;
   @include sp{
     font-size: 30px;
+    margin-bottom: 24px;
   }
   span{
     display: block;
-  font-size: 20px;
+    font-size: 20px;
   }
 }
 
