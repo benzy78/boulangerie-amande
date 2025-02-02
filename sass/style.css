@@ -222,6 +222,7 @@ select:focus {
   background-color: transparent;
   padding: 24px;
   width: 100%;
+  z-index: 100;
 }
 
 .header__contents {
@@ -935,6 +936,50 @@ select:focus {
   text-align: center;
 }
 
+.keyvisual {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.5s ease-in-out;
+}
+
+.keyvisual.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.section .inner--small {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.5s ease-in-out;
+}
+
+.section .inner--small.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fadein {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.5s ease-in-out;
+}
+
+.fadein.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.scroll-fadein {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.5s ease-in-out;
+}
+
+.scroll-fadein.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .commitment--detail {
   padding: 48px 24px 64px;
 }
@@ -1047,6 +1092,7 @@ select:focus {
 
 .selection--detail {
   padding: 48px 24px;
+  position: relative;
 }
 
 .selection__contents-ttl--detail {
@@ -1219,6 +1265,7 @@ select:focus {
   margin-left: 24px;
   margin-bottom: 24px;
   font-size: 20px;
+  list-style-type: circle;
 }
 @media (max-width: 992px) {
   .information__text-list--detail li {
@@ -1303,7 +1350,7 @@ select:focus {
   border: 1px solid #f7f7f7;
   background-color: #ffffff;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  transition: all 0.3s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 @media (max-width: 768px) {
   .news__card--detail {
@@ -1450,4 +1497,67 @@ select:focus {
 
 .bold {
   font-weight: bold;
+}
+
+.commingsoon {
+  padding: 48px 24px 64px;
+}
+
+.commingsoon__contents {
+  display: flex;
+  justify-content: space-between;
+  gap: 48px;
+}
+@media (max-width: 768px) {
+  .commingsoon__contents {
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+}
+
+.commingsoon__img {
+  width: 40%;
+}
+@media (max-width: 768px) {
+  .commingsoon__img {
+    width: 100%;
+  }
+}
+.commingsoon__img img {
+  width: 100%;
+  height: auto;
+}
+
+.commingsoon__text {
+  width: 60%;
+  margin-top: 48px;
+}
+@media (max-width: 768px) {
+  .commingsoon__text {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+.commingsoon__ttl {
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 48px;
+}
+@media (max-width: 992px) {
+  .commingsoon__ttl {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+}
+
+.commingsoon__description {
+  font-size: 20px;
+  margin-bottom: 48px;
+}
+@media (max-width: 992px) {
+  .commingsoon__description {
+    font-size: 16px;
+    margin-bottom: 24px;
+  }
 }/*# sourceMappingURL=style.css.map */
