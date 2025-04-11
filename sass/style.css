@@ -410,11 +410,13 @@ select:focus {
   background-color: #a84444;
   transition: all 0.3s ease-in-out;
   border: 1px solid #a84444;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
 }
 .cta-btn:hover {
-  background-color: #ffffff;
-  color: #a84444;
+  transform: translateY(-2px);
+  background-color: #863636;
   box-shadow: none;
 }
 @media (max-width: 768px) {
