@@ -232,6 +232,7 @@ select:focus {
 
 .header__logo {
   transition: 0.3s all ease-in-out;
+  line-height: 1;
 }
 .header__logo img {
   width: 162px;
@@ -273,7 +274,7 @@ select:focus {
 .header__nav-ja {
   display: block;
   font-family: "Noto Serif JP", "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .header__menu-toggle {
@@ -287,11 +288,12 @@ select:focus {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 56px;
-    width: 48px;
+    height: 48px;
+    width: 44px;
     padding: 0;
-    padding-top: 8px;
-    position: relative;
+    position: absolute;
+    top: 16px;
+    right: 24px;
     z-index: 100;
   }
 }
@@ -302,29 +304,38 @@ select:focus {
   width: 100%;
   border-radius: 5px;
   transition: all 0.3s ease-in-out 0s;
+  position: absolute;
+}
+.header__menu-icon:nth-child(1) {
+  top: 8px;
+}
+.header__menu-icon:nth-child(2) {
+  top: 16px;
+}
+.header__menu-icon:nth-child(3) {
+  top: 24px;
 }
 
 .header__menu-label {
   font-size: 14px;
   color: #ffffff;
-  padding: 0 7px;
+  padding: 0 4px;
   transition: all 0.3s ease-in-out 0s;
+  position: absolute;
+  top: 36px;
 }
 
 .active .header__menu-toggle .header__menu-icon:nth-child(1) {
   transform: translateY(0) rotate(225deg);
   position: absolute;
-  top: 24px;
+  top: 16px;
 }
 .active .header__menu-toggle .header__menu-icon:nth-child(2) {
   transform: translateY(0) rotate(-225deg);
   position: absolute;
-  top: 24px;
+  top: 16px;
 }
 .active .header__menu-toggle .header__menu-icon:nth-child(3) {
-  display: none;
-}
-.active .header__menu-toggle .header__menu-label {
   display: none;
 }
 @media (max-width: 992px) {
@@ -453,9 +464,6 @@ select:focus {
 .header--detail {
   background-color: #000000;
   position: relative;
-}
-.header--detail .header__nav-links a {
-  border-bottom: 2px solid #000000;
 }
 
 .section__ttl--detail {
