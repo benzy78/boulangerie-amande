@@ -462,7 +462,7 @@ select:focus {
 }
 
 .header--detail {
-  background-color: #000000;
+  background-color: #101010;
   position: relative;
 }
 
@@ -832,7 +832,7 @@ select:focus {
 
 .footer {
   padding: 48px 24px 64px;
-  background-color: #000000;
+  background-color: #101010;
 }
 @media (max-width: 768px) {
   .footer {
