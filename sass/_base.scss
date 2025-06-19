@@ -81,9 +81,9 @@ input,textarea {
 	-webkit-appearance: none;
 
 	&:focus {
-		outline: none;
-		border: 1px solid $MainColor;
-		box-shadow: none;
+		outline: 1px solid #3b82f6;
+		border:none;
+		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
 	}
 }
 
@@ -99,7 +99,7 @@ input {
 
 		&:hover,
 		&:focus {
-			outline: none;
+			outline:none;
 			border: none;
 		}
 

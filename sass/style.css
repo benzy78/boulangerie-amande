@@ -77,9 +77,9 @@ input, textarea {
   -webkit-appearance: none;
 }
 input:focus, textarea:focus {
-  outline: none;
-  border: 1px solid #363636;
-  box-shadow: none;
+  outline: 1px solid #3b82f6;
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
 }
 
 textarea {
