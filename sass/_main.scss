@@ -75,14 +75,17 @@
   }
 }
 .commitment__description{
-  margin-bottom: 24px;
-  font-size: 20px;
+  margin-bottom: 12px;
+  font-size: 16px;
+  letter-spacing: 0.02em;
   line-height: 2;
-  text-align: justify;
   @include sp{
     margin-bottom: 24px;
     font-size: 16px;
   }
+}
+.mb24{
+  margin-bottom: 24px;
 }
 .commitment__img{
   width: 50%;
@@ -202,10 +205,10 @@
 }
 .information__description{
   list-style: none;
-  margin-bottom: 24px;
+  margin-bottom: 32px;
   
   li{
-    font-size: 20px;
+    font-size: 16px;
     margin-bottom: 24px;
     line-height: 1.3;
     @include sp{
@@ -246,7 +249,7 @@
       display: block;
       color: $mc-light-black;
       padding: 24px;
-      font-size: 24px;
+      font-size: 20px;
       transition: all 0.3s ease-in-out;
       @include sp{
         font-size: 16px;
@@ -423,3 +426,103 @@
   transform: translateY(0);
 }
 // animation end
+
+
+// contact
+
+.contact{
+  padding: 48px 24px 64px;
+}
+
+.contact-form{
+  max-width: 800px;
+  margin: 0 auto 48px;
+}
+.form-row {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  @include sp{
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
+.form-row.full {
+  flex-direction: column;
+  align-items: flex-start;
+  button{
+    margin: 0 auto;
+  }
+}
+
+label {
+  width: 200px;
+  font-weight: normal;
+  padding-top: 10px;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  color: $mc-black;
+  @include sp{
+    font-size: 14px;
+    width: 100%;
+  }
+}
+
+.required {
+  color: $ac-wine-red;
+  font-size: 14px;
+  margin-left: 4px;
+  @include sp{
+    font-size: 12px;
+  }
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  flex: 1;
+  padding: 16px;
+  font-size: 16px;
+  background: #f7f7f7;
+  border: none;
+  border-radius: 8px;
+  resize: vertical;
+  color: $mc-black;
+  @include sp{
+    font-size: 16px;
+    width: 100%;
+  }
+}
+
+textarea {
+  min-height: 200px;
+}
+
+.consent {
+  font-size: 14px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 16px;
+  span{
+    margin-left: 24px;
+  }
+}
+
+.consent a {
+  color: #3b82f6;
+  text-decoration: underline;
+}
+
+button {
+  background: $ac-wine-red;
+  color: white;
+  padding: 14px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.3s;
+  line-height: 1.5;
+}
+

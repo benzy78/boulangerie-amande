@@ -268,7 +268,7 @@ select:focus {
   font-size: 20px;
 }
 .header__nav-links li a:hover {
-  border-bottom: 2px solid #ffffff;
+  opacity: 0.7;
 }
 
 .header__nav-ja {
@@ -409,13 +409,13 @@ select:focus {
 }
 
 .cta-btn {
-  padding: 24px 0;
+  padding: 20px 0;
   text-align: center;
   display: block;
   color: #ffffff;
   max-width: 496px;
   width: 100%;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 600;
   line-height: 1;
   background-color: #a84444;
@@ -590,16 +590,20 @@ select:focus {
 }
 
 .commitment__description {
-  margin-bottom: 24px;
-  font-size: 20px;
+  margin-bottom: 12px;
+  font-size: 16px;
+  letter-spacing: 0.02em;
   line-height: 2;
-  text-align: justify;
 }
 @media (max-width: 768px) {
   .commitment__description {
     margin-bottom: 24px;
     font-size: 16px;
   }
+}
+
+.mb24 {
+  margin-bottom: 24px;
 }
 
 .commitment__img {
@@ -749,10 +753,10 @@ select:focus {
 
 .information__description {
   list-style: none;
-  margin-bottom: 24px;
+  margin-bottom: 32px;
 }
 .information__description li {
-  font-size: 20px;
+  font-size: 16px;
   margin-bottom: 24px;
   line-height: 1.3;
 }
@@ -800,7 +804,7 @@ select:focus {
   display: block;
   color: #363636;
   padding: 24px;
-  font-size: 24px;
+  font-size: 20px;
   transition: all 0.3s ease-in-out;
 }
 @media (max-width: 768px) {
@@ -1002,6 +1006,113 @@ select:focus {
   transform: translateY(0);
 }
 
+.contact {
+  padding: 48px 24px 64px;
+}
+
+.contact-form {
+  max-width: 800px;
+  margin: 0 auto 48px;
+}
+
+.form-row {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+@media (max-width: 768px) {
+  .form-row {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
+.form-row.full {
+  flex-direction: column;
+  align-items: flex-start;
+}
+.form-row.full button {
+  margin: 0 auto;
+}
+
+label {
+  width: 200px;
+  font-weight: normal;
+  padding-top: 10px;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  color: #101010;
+}
+@media (max-width: 768px) {
+  label {
+    font-size: 14px;
+    width: 100%;
+  }
+}
+
+.required {
+  color: #a84444;
+  font-size: 14px;
+  margin-left: 4px;
+}
+@media (max-width: 768px) {
+  .required {
+    font-size: 12px;
+  }
+}
+
+input[type=text],
+input[type=email],
+textarea {
+  flex: 1;
+  padding: 16px;
+  font-size: 16px;
+  background: #f7f7f7;
+  border: none;
+  border-radius: 8px;
+  resize: vertical;
+  color: #101010;
+}
+@media (max-width: 768px) {
+  input[type=text],
+  input[type=email],
+  textarea {
+    font-size: 16px;
+    width: 100%;
+  }
+}
+
+textarea {
+  min-height: 200px;
+}
+
+.consent {
+  font-size: 14px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 16px;
+}
+.consent span {
+  margin-left: 24px;
+}
+
+.consent a {
+  color: #3b82f6;
+  text-decoration: underline;
+}
+
+button {
+  background: #a84444;
+  color: white;
+  padding: 14px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.3s;
+  line-height: 1.5;
+}
+
 .commitment--detail {
   padding: 48px 24px 64px;
 }
@@ -1130,26 +1241,25 @@ select:focus {
 }
 
 .selection__contents--detail {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 2%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin-bottom: 32px;
+}
+@media (max-width: 992px) {
+  .selection__contents--detail {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .selection__contents--detail {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 32px;
+  }
 }
 
 .selection__card--detail {
   position: relative;
-  width: 32%;
-  margin-bottom: 48px;
-}
-@media (max-width: 992px) {
-  .selection__card--detail {
-    width: 46%;
-  }
-}
-@media (max-width: 768px) {
-  .selection__card--detail {
-    width: 100%;
-  }
 }
 .selection__card--detail img {
   width: 100%;
@@ -1182,9 +1292,9 @@ select:focus {
 }
 
 .selection__card-description--detail {
-  padding: 0 16px;
-  text-align: justify;
-  font-size: 20px;
+  font-size: 16px;
+  line-height: 1.7;
+  letter-spacing: 0.02em;
 }
 @media (max-width: 768px) {
   .selection__card-description--detail {
@@ -1401,6 +1511,7 @@ select:focus {
 .news__card-img--detail img {
   width: 100%;
   height: 100%;
+  display: block;
 }
 
 .news__card-text--detail {

@@ -14,21 +14,21 @@
 }
 
 .selection__contents--detail{
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 2%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin-bottom: 32px;
+  @include tab{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include sp{
+    grid-template-columns: repeat(1, 1fr);
+    gap: 32px;
+  }
 }
 .selection__card--detail{
   position: relative;
-  width: 32%;
-  margin-bottom: 48px;
-  @include tab{
-    width: 46%;
-  }
-  @include sp{
-    width: 100%;
-  }
+  
   img{
     width: 100%;
     height: auto;
@@ -58,9 +58,9 @@
   line-height: 1;
 }
 .selection__card-description--detail{
-  padding: 0 16px;
-  text-align: justify;
-  font-size: 20px;
+  font-size: 16px;
+  line-height: 1.7;
+  letter-spacing: 0.02em;
   @include sp{
     font-size: 16px;
   }
