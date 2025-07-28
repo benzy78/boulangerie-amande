@@ -82,7 +82,6 @@ input,textarea {
 
 	&:focus {
 		outline: 1px solid #3b82f6;
-		border:none;
 		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
 	}
 }
@@ -155,7 +154,7 @@ input {
 				top: 50%;
 				left: 0.2em;
 				transform: translateY(-50%);
-				background: $MainColor;
+				background: $ac-wine-red;
 				border-radius: 50%;
 				width: 0.6em;
 				height: 0.6em;
@@ -208,8 +207,8 @@ input {
 				height: 0.6em;
 				margin-top: -0.2em;
 				display: block;
-				border-left: 3px solid $MainColor;
-				border-bottom: 3px solid $MainColor;
+				border-left: 3px solid $ac-wine-red;
+				border-bottom: 3px solid $ac-wine-red;
 				opacity: 1;
 			}
 		}

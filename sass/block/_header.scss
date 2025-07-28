@@ -3,7 +3,7 @@
     position: absolute;
     top: 0;
     background-color:  transparent;
-    padding: 24px;
+    padding: 20px 24px;
     width: 100%;
     z-index: 100;
   }
@@ -11,13 +11,17 @@
   .header__contents{
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
   .header__logo{
     transition: 0.3s all ease-in-out;
     line-height: 1;
     img{
-      width: 162px;
+      width: 200px;
       height: auto;
+      @include sp{
+        width: 140px;
+      }
     }
     &:hover{
       opacity: 0.7;
@@ -31,28 +35,33 @@
     }
   
     li{
-      margin-left: 24px;
+      margin-left: 16px;
       @include tab{
         margin-left: 0;
       }
       a{
         color: $bc-white;
         transition: 0.3s all ease-in-out;
-        font-family: $ff-serif-en;
         text-align: center;
         display: block;
-        font-size: 20px;
+        font-size: 16px;
+        line-height: 1;
+        padding: 14px;
+        border: 1px solid transparent;
+        border-radius: 12px;
+        // text-shadow: 2px 2px 2px rgba(255,255,255,0.7);
+        text-shadow: 2px 2px 2px rgba(0,0,0,1);
         &:hover{
-          opacity: 0.7;
+          border: 1px solid $bc-white;
         }
       }
     }
   }
-  .header__nav-ja{
-    display: block;
-    font-family: $ff-mincho-ja;
-    font-size: 14px;
-  }
+  // .header__nav-ja{
+  //   display: block;
+  //   font-family: $ff-mincho-ja;
+  //   font-size: 14px;
+  // }
   
   // 以下ハンバーガーメニューの実装
   .header__menu-toggle{
@@ -76,9 +85,9 @@
   
   .header__menu-icon {
     background-color: $bc-white;
-    height: 3px;
+    height: 2px;
     width: 100%;
-    border-radius: 5px;
+    border-radius: 4px;
     transition: all 0.3s ease-in-out 0s;
     position: absolute;
     &:nth-child(1){
@@ -135,20 +144,27 @@
         top: 0;
         width: 100%;
         left: 0;
-        padding: 50px 30px;
+        padding: 96px 24px;
         text-align: center;
         z-index: 99;
       }
     }
       li{
         width: 100%;
+        margin-bottom: 24px;
         a{
           @include tab{
-            padding: 30px;
-            border-bottom: 1px solid $bc-white;
+            padding: 16px;
+            border: 1px solid $bc-white;
           }
         }
       }
     }
-  // header end
+  
+  .header--detail{
+  background-color: $mc-black;
+  position: relative;
+  padding: 16px 24px;
+  }
+    // header end
   

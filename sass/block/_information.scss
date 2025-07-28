@@ -17,7 +17,7 @@
   }
 }
 .information__contents-image--detail{
-  width: 45%;
+  width: calc(35% - 24px);
   @include tab{
     width: 50%;
   }
@@ -38,7 +38,7 @@
   }
 }
 .information__contents-text--detail{
-  width: 55%;
+  width: calc(65% - 24px);
   @include tab{
     width: 50%;
   }
@@ -48,7 +48,7 @@
   }
 }
 .information__text-ttl--detail{
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 500;
   margin-bottom: 24px;
   @include tab{
@@ -70,7 +70,7 @@
   li{
     margin-left: 24px;
     margin-bottom: 24px;
-    font-size: 20px;
+    font-size: 16px;
     list-style-type: circle;
     @include tab{
       font-size: 16px;

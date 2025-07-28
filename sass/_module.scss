@@ -29,6 +29,9 @@
   @include tab{
     font-size: 24px;
   }
+  @include sp{
+    font-size: 20px;
+  }
 }
 .cta__description{
   max-width: 640px;
@@ -49,18 +52,21 @@
   width: 100%;
   font-size: 16px;
   font-weight: 600;
+  letter-spacing: 0.1em;
   line-height: 1;
-  background-color: $ac-wine-red;
-  transition: all 0.3s ease-in-out;
-  border: 1px solid $ac-wine-red;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease-in-out;
   text-decoration: none;
+  position: relative;
+  background: linear-gradient(to right, #652929 50%, $ac-wine-red 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: background-position 0.3s ease-in-out;
+
   &:hover{
-    transform: translateY(-2px); 
-    background-color: #863636;
+    background-position: left bottom;
     box-shadow: none;
   }
+
   @include sp{
     max-width: 100%;
     padding: 16px 0;
@@ -69,43 +75,39 @@
 }
 
 .section__ttl{
-  font-size: 40px;
+  font-size: 36px;
   font-weight: normal;
+  letter-spacing: 0.04em;
   margin-bottom: 24px;
-  line-height: 1.1;
+  line-height: 1.3;
   font-family: $ff-serif-en;
-  @include tab{
-    font-size: 36px;
-  }
   @include sp{
-    font-size: 32px;
+    font-size: 24px;
   }
 }
 
 .section__ttl-ja{
   display: block;
-  font-size: 20px;
+  font-size: 16px;
 }
 
-.header--detail{
-  background-color: $mc-black;
-  position: relative;
-}
+
 
 .section__ttl--detail{
-  font-size: 40px;
+  font-size: 36px;
   font-weight: normal;
   margin-bottom: 48px;
-  line-height: 1.1;
+  line-height: 1.3;
+  letter-spacing: 0.04em;
   font-family: $ff-serif-en;
   text-align: center;
   @include sp{
-    font-size: 30px;
+    font-size: 24px;
     margin-bottom: 24px;
   }
   span{
     display: block;
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 
