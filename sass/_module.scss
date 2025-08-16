@@ -22,7 +22,7 @@
   }
 }
 .cta__ttl{
-  font-size: 32px;
+  font-size: 36px;
   margin-bottom: 24px;
   text-align: center;
   font-weight: normal;
@@ -37,9 +37,12 @@
   max-width: 640px;
   width: 100%;
   margin: 0 auto;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 2;
   margin-bottom: 32px;
+  @include sp{
+    font-size: 16px;
+  }
 }
 // cta section end
 
@@ -50,7 +53,7 @@
   color: $bc-white;
   max-width: 496px;
   width: 100%;
-  font-size: 16px;
+  font-size: 18px;
   font-family: $ff-kgpw3;
   font-weight: normal;
   letter-spacing: 0.16em;
@@ -61,7 +64,7 @@
   background: linear-gradient(to right, #652929 50%, $ac-wine-red 50%);
   background-size: 200% 100%;
   background-position: right bottom;
-  transition: background-position 0.3s ease-in-out;
+  transition: background-position 0.4s ease-in-out;
 
   &:hover{
     background-position: left bottom;
@@ -76,7 +79,7 @@
 }
 
 .section__ttl{
-  font-size: 36px;
+  font-size: 40px;
   font-weight: normal;
   letter-spacing: 0.04em;
   margin-bottom: 24px;

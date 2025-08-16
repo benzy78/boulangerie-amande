@@ -269,13 +269,12 @@ select:focus {
   transition: 0.3s all ease-in-out;
   text-align: center;
   display: block;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1;
   letter-spacing: 0.08em;
   padding: 14px;
   border: 1px solid transparent;
   border-radius: 12px;
-  font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "Noto Sans Japanese", sans-serif;
 }
 .header__nav-links li a:hover {
   border: 1px solid #ffffff;
@@ -399,7 +398,7 @@ select:focus {
 }
 
 .cta__ttl {
-  font-size: 32px;
+  font-size: 36px;
   margin-bottom: 24px;
   text-align: center;
   font-weight: normal;
@@ -419,9 +418,14 @@ select:focus {
   max-width: 640px;
   width: 100%;
   margin: 0 auto;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 2;
   margin-bottom: 32px;
+}
+@media (max-width: 768px) {
+  .cta__description {
+    font-size: 16px;
+  }
 }
 
 .cta-btn {
@@ -431,7 +435,7 @@ select:focus {
   color: #ffffff;
   max-width: 496px;
   width: 100%;
-  font-size: 16px;
+  font-size: 18px;
   font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "Noto Sans Japanese", sans-serif;
   font-weight: normal;
   letter-spacing: 0.16em;
@@ -442,7 +446,7 @@ select:focus {
   background: linear-gradient(to right, #652929 50%, #a84444 50%);
   background-size: 200% 100%;
   background-position: right bottom;
-  transition: background-position 0.3s ease-in-out;
+  transition: background-position 0.4s ease-in-out;
 }
 .cta-btn:hover {
   background-position: left bottom;
@@ -457,7 +461,7 @@ select:focus {
 }
 
 .section__ttl {
-  font-size: 36px;
+  font-size: 40px;
   font-weight: normal;
   letter-spacing: 0.04em;
   margin-bottom: 24px;
@@ -528,12 +532,11 @@ select:focus {
 }
 
 .keyvisual__ttl {
-  font-size: 36px;
+  font-size: 40px;
   margin-bottom: 20px;
   letter-spacing: 0.2em;
-  line-height: 2.5;
+  line-height: 2;
   font-weight: normal;
-  text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.3);
 }
 @media (max-width: 768px) {
   .keyvisual__ttl {
@@ -544,12 +547,10 @@ select:focus {
 
 .keyvisual__subttl-box {
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.5);
   right: 0;
   bottom: 0;
   width: 50%;
   height: 60%;
-  clip-path: polygon(100% 0, 0 100%, 100% 100%);
   z-index: 1;
 }
 @media (max-width: 768px) {
@@ -560,7 +561,7 @@ select:focus {
 }
 
 .keyvisual__subttl {
-  font-size: 40px;
+  font-size: 72px;
   position: absolute;
   right: 8%;
   bottom: 8%;
@@ -569,7 +570,7 @@ select:focus {
   line-height: 1.75;
   text-align: right;
   font-family: "Dancing Script", cursive;
-  color: #f0f0f0;
+  color: rgba(255, 255, 255, 0.3);
 }
 @media (max-width: 992px) {
   .keyvisual__subttl {
@@ -642,7 +643,7 @@ select:focus {
 
 .commitment__description {
   margin-bottom: 12px;
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0.02em;
   line-height: 2;
 }
@@ -716,6 +717,7 @@ select:focus {
 .selection__card-label {
   background-color: rgba(54, 54, 54, 0.8);
   color: #ffffff;
+  font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "Noto Sans Japanese", sans-serif;
   text-align: center;
   padding: 8px;
   position: absolute;
@@ -797,7 +799,7 @@ select:focus {
   margin-bottom: 32px;
 }
 .information__description li {
-  font-size: 16px;
+  font-size: 18px;
   margin-bottom: 24px;
   line-height: 1.3;
 }
@@ -1269,9 +1271,14 @@ textarea {
 }
 
 .commitment__contents-description--detail {
-  font-size: 16px;
+  font-size: 18px;
   margin-bottom: 16px;
   line-height: 2;
+}
+@media (max-width: 768px) {
+  .commitment__contents-description--detail {
+    font-size: 16px;
+  }
 }
 
 .commitment__contents-img--detail {
@@ -1472,7 +1479,7 @@ textarea {
 .information__text-list--detail li {
   margin-left: 24px;
   margin-bottom: 24px;
-  font-size: 16px;
+  font-size: 18px;
   list-style-type: circle;
 }
 @media (max-width: 992px) {
@@ -1702,6 +1709,12 @@ textarea {
 .article__card-text {
   margin-bottom: 24px;
   line-height: 2;
+  font-size: 18px;
+}
+@media (max-width: 768px) {
+  .article__card-text {
+    font-size: 16px;
+  }
 }
 
 .bold {

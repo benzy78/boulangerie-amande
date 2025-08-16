@@ -69,9 +69,12 @@
 }
 
 .commitment__contents-description--detail{
-  font-size: 16px;
+  font-size: 18px;
   margin-bottom: 16px;
   line-height: 2;
+  @include sp{
+    font-size: 16px;
+  }
 }
 
 .commitment__contents-img--detail{
