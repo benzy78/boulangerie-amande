@@ -366,7 +366,7 @@
     }
     a{
       color: $bc-white;
-      font-family: $ff-serif-en;
+      font-family: $ff-kgpw3;
       transition: all 0.3s ease-in-out;
       &:hover{
         opacity: 0.7;
@@ -389,7 +389,7 @@
   font-size: 20px;
   color: $bc-white;
   margin-bottom: 24px;
-  font-family: $ff-serif-en;
+  font-family: $ff-kgpw3;
   @include sp{
     font-size: 20px;
     margin-bottom: 16px;
@@ -412,7 +412,7 @@
     a{
       color: $bc-white;
       transition: all 0.3s ease-in-out;
-      font-family: $ff-serif-en;
+      font-family: $ff-kgpw3;
       &:hover{
         opacity: 0.7;
       }
