@@ -1,13 +1,32 @@
 .inner--small{
   margin: 0 auto;
-  max-width: 1040px;
+  max-width: 1440px;
   width: 100%;
+  padding: 0 80px;
 }
 
 .inner--large{
   margin: 0 auto;
-  max-width: 1232px;
+  max-width: 1440px;
   width: 100%;
+  padding: 0 120px;
+}
+
+.inner--s{
+  margin: 0 auto;
+  max-width: 1280px;
+  padding: 0 40px;
+  @include sp{
+    padding: 0 20px;
+  }
+}
+.inner--l{
+  margin: 0 auto;
+  max-width: 1360px;
+  padding: 0 40px;
+  @include sp{
+    padding: 0 20px;
+  }
 }
 
 // cta section
@@ -45,6 +64,37 @@
   }
 }
 // cta section end
+
+.primary-btn{
+  padding: 16px 32px;
+  display: block;
+  color: $bc-white;
+  max-width: 320px;
+  width: 100%;
+  font-size: 16px;
+  font-family: $ff-gothic;
+  font-weight: bold;
+  letter-spacing: 0.16em;
+  line-height: 1;
+  text-decoration: none;
+  position: relative;
+  background: linear-gradient(to right, #652929 50%, $ac-wine-red 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: background-position 0.4s ease-in-out;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &:hover{
+    background-position: left bottom;
+    box-shadow: none;
+  }
+
+  @include sp{
+    max-width: 100%;
+  }
+}
 
 .cta-btn{
   padding: 20px 0;

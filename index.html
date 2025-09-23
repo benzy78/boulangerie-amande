@@ -13,20 +13,16 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
     <!-- wow -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet" type="text/css" media="all">
-    <!-- google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="wrapper">
         <!-- header -->
         <header class="header">
-            <div class="inner--large">
+            <div class="inner--l">
                 <div class="header__contents">
                     <div class="header__logo"><a href="./index.html"><img src="./images/BA_Logo.svg" alt="Boulangerie Amande" fetchpriority="high" width="200" height="64"></a></div>
-                    <div class="header__nav">
+                    <nav class="header__nav">
                         <button class="header__menu-toggle" aria-label="Toggle navigation">
                             <span class="header__menu-icon"></span>
                             <span class="header__menu-icon"></span>
@@ -36,11 +32,11 @@
                         <ul class="header__nav-links">
                             <li><a href="./html/commitment.html">私たちのこだわり</a></li>
                             <li><a href="./html/selection.html">メニュー</a></li>
-                            <li><a href="./html/information.html">店舗情報</a></li>
+                            <li><a href="#information">店舗情報</a></li>
                             <li><a href="./html/news.html">お知らせ</a></li>
                             <li><a href="./html/contact.html">お問い合わせ</a></li>
                         </ul>
-                    </div>
+                    </nav>
                 </div>
             </div>
         </header>
@@ -49,27 +45,35 @@
         <main>
             <!-- keyvisual -->
             <section class="keyvisual fadein">
-                <div class="inner--mask">
-                    <div class="inner--large">
-                        <h1 class="keyvisual__ttl">パリの街角から届いた職人の手仕事<br>本場の味を毎日のテーブルに</h1>
-                        <!-- <div class="keyvisual__subttl-box">
-                            <p class="keyvisual__subttl">Savor <br> the Art of <br> French Baking</p>
-                        </div> -->
+                <div class="keyvisual__content">
+                    <div class="keyvisual__content-inner">
+                        <h1 class="keyvisual__ttl"><img src="./images/fv__message.svg" alt="Savor the Art of French Baking" fetchpriority="high" width="625" height="178"></h1>
+                        <p class="keyvisual__subttl">
+                            パリの街角から届いた、職人の手仕事。<br>
+                            本場の味を毎日のテーブルに。
+                        </p>
+                        <div class="keyvisual__scroll">
+                            <img src="./images/visual__scroll.svg" alt="scroll" width="47" height="55" fetchpriority="high">
+                        </div>
                     </div>
+                </div>
+                <div class="keyvisual__bgi">
+                    <img src="./images/amande-keyvisual.webp" alt="店内写真" width="1792" height="1024" fetchpriority="high">
                 </div>
             </section>
             <!-- keyvisual end -->
 
             <!-- Commitment -->
             <section class="commitment fadein">
-                <div class="inner--small">
+                <div class="inner--s">
+                    <div class="commitment__bgt"><img src="./images/commitment.svg" alt="Commitment" loading="lazy" decoding="async" width="1217" height="111"></div>
                     <div class="commitment__contents">
-                        <h2 class="section__ttl commitment__ttl--sp">Our Commitment<span class="section__ttl-ja">私たちのこだわり</span></h2>
                         <div class="commitment__text">
-                            <h2 class="section__ttl commitment__ttl">Our Commitment<span class="section__ttl-ja">私たちのこだわり</span></h2>
+                            <p class="commitment__subttl">Our Commitment</p>
+                            <h2 class="commitment__ttl">芸術作品のような仕上がりを</h2>
                             <p class="commitment__description">Boulangerie Amande（ブーランジェリー アマンド）は、1つ1つのパンに職人の技と情熱を込め、まるで芸術作品のような仕上がりを追求しています。</p>
                             <p class="commitment__description mb32">私たちが選ぶのは、厳選されたオーガニック素材とフランス伝統の製法。長時間発酵により生まれる深みのある味わい、手仕事ならではの繊細な仕上がりが、私たちの誇りです。ぜひ、本物のフレンチベーカリーの味わいをお楽しみください。</p>
-                            <a href="./html/commitment.html" class="cta-btn">View More</a>
+                            <a href="./html/commitment.html" class="primary-btn">詳細はこちら<img src="./images/arrow.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" width="24" height="24"></a>
                         </div>
                         <figure class="commitment__img"><img src="./images/home-commitment.webp" alt="Boulangerie Amandeの店内で生地をこねる職人と焼きたてのクロワッサン" width="1792" height="1024" loading="lazy" decoding="async"></figure>
                     </div>
@@ -79,55 +83,43 @@
 
             <!-- Selection -->
             <section class="selection scroll-fadein">
-                <div class="inner--small">
-                    <h2 class="section__ttl selection__ttl">Our Selection<span class="section__ttl-ja">メニュー</span></h2>
+                <div class="inner--s">
+                    <div class="selection__bgt"><img src="./images/selection.svg" alt="Selection" loading="lazy" decoding="async" width="1301" height="111"></div>
                     <div class="selection__contents">
-                        <figure class="selection__card">
+                        <figure class="selection__img">
                             <img src="./images/menu-01.webp" alt="フレンチトースト、箱入り2枚" width="1024" height="1024" loading="lazy" decoding="async">
-                            <figcaption class="selection__card-label">フレンチトースト ￥550（税込）</figcaption>
-                        </figure>
-                        <figure class="selection__card">
                             <img src="./images/menu-02.webp" alt="クロワッサン、正面" width="1024" height="1024" loading="lazy" decoding="async">
-                            <figcaption class="selection__card-label">クロワッサン ￥350（税込）</figcaption>
-                        </figure>
-                        <figure class="selection__card">
                             <img src="./images/menu-03.webp" alt="パンオショコラ、正面" width="1024" height="1024" loading="lazy" decoding="async">
-                            <figcaption class="selection__card-label">パンオショコラ ￥400（税込）</figcaption>
-                        </figure>
-                        <figure class="selection__card">
                             <img src="./images/menu-04.webp" alt="ブリオッシュ（ホール）、正面" width="1024" height="1024" loading="lazy" decoding="async">
-                            <figcaption class="selection__card-label">ブリオッシュ ￥500（税込）</figcaption>
                         </figure>
-                        <figure class="selection__card">
-                            <img src="./images/menu-05.webp" alt="カヌレ、正面" width="1024" height="1024">
-                            <figcaption class="selection__card-label">カヌレ ￥400（税込）</figcaption>
-                        </figure>
-                        <figure class="selection__card">
-                            <img src="./images/menu-06.webp" alt="パンカンパーニュ（ホール）、正面" width="1024" height="1024" loading="lazy" decoding="async">
-                            <figcaption class="selection__card-label">パンカンパーニュ ￥400（税込）</figcaption>
-                        </figure>
+                        <div class="selection__text">
+                            <p class="selection__subttl">Our Selection</p>
+                            <h2 class="selection__ttl">毎日の美味しいをあなたに</h2>
+                            <p class="selection__description">ひとくちで感じる、小麦の香りと職人の手仕事。Amandeでは、毎朝焼き上げるパンで皆さまの食卓に豊かな時間をお届けします。</p>
+                            <p class="selection__description mb32">定番のクロワッサンやバゲットはもちろん、季節のフルーツを使ったデニッシュ、香ばしいくるみ入りパンなど、毎日でも楽しめるラインナップをご用意しています。</p>
+                            <a href="./html/selection.html" class="primary-btn">メニュ一詳細はこちら<img src="./images/arrow.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" width="24" height="24"></a>
+                        </div>
                     </div>
-                    <a href="./html/selection.html" class="cta-btn selection__btn">View More</a>
                 </div>
             </section>
             <!-- selection end -->
 
             <!-- Information -->
-            <section class="information scroll-fadein">
-                <div class="inner--small">
+            <section class="information scroll-fadein" id="information">
+                <div class="inner-info">
                     <div class="information__contents">
-                        <h2 class="section__ttl information__ttl--sp">Information<span class="section__ttl-ja">店舗情報</span></h2>
-                        <figure class="information__img"><img src="./images/information.webp" alt="店舗外観写真" width="1024" height="1024" loading="lazy" decoding="async"></figure>
-                        <div class="information__text">
-                            <h2 class="section__ttl information__ttl">Information<span class="section__ttl-ja">店舗情報</span></h2>
-                            <ul class="information__description">
-                                <li>店名 : Boulangerie Amande（ブーランジェリー アマンド）</li>
-                                <li>住所 : 東京都渋谷区xxx町1-2-3</li>
-                                <li>営業時間 : 7:30 - 20:00（火曜定休日）</li>
-                                <li>駐車場 : 近隣のコインパーキングをご利用ください</li>
-                                <li>アクセス : JR渋谷駅より徒歩5分</li>
-                            </ul>
-                            <a href="./html/information.html" class="cta-btn">View More</a>
+                        <div class="inner-info--mask">
+                            <div class="information__text">
+                                <p class="information__subttl">Informarion</p>
+                                <h2 class="information__ttl">店舗情報</h2>
+                                <ul class="information__list">
+                                    <li>〒 123-4567</li>
+                                    <li>東京都渋谷区笹崎町1-2-3</li>
+                                    <li><img class="information__icon" src="./images/map.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" width="24" height="24">JR渋谷駅より徒歩5分</li>
+                                    <li><img class="information__hours" src="./images/business-hours.svg" alt="営業時間" loading="lazy" decoding="async" width="463" height="119"></li>
+                                </ul>
+                            </div>
+                            <iframe class="information__map" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3427.4965801315816!2d139.69906087598966!3d35.65803387259484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z5riL6LC36aeF!5e1!3m2!1sja!2sjp!4v1758469941561!5m2!1sja!2sjp" width="600" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
                 </div>
@@ -136,15 +128,21 @@
 
             <!-- news -->
             <section class="news scroll-fadein">
-                <div class="inner--small">
-                    <h2 class="section__ttl news__ttl">News <span class="section__ttl-ja">お知らせ</span></h2>
-                    <ul class="news__contents">
-                        <li><a href="./html/news-01.html">新商品「タルト・フランベ」発売のお知らせ<span class="news__contents-day">2025/01/30</span></a></li>
-                        <li><a href="./html/news-02.html">年末年始の休業のお知らせ<span class="news__contents-day">2024/12/22</span></a></li>
-                        <li><a href="./html/news-03.html">新商品「ガーリック・フランス」発売のお知らせ<span class="news__contents-day">2024/12/11</span></a></li>
-                        <li><a href="./html/news-04.html">11月の臨時休業のお知らせ<span class="news__contents-day">2024/10/28</span></a></li>
-                    </ul>
-                    <a href="./html/news.html" class="cta-btn news__btn">View More</a>
+                <div class="inner--s">
+                    <div class="news__contents">
+                        <div class="news__text">
+                            <p class="news__subttl">News</p>
+                            <h2 class="news__ttl">お知らせ</h2>
+                            <a href="./html/news.html" class="primary-btn news__btn--pc">お知らせ一覧はこちら<img src="./images/arrow.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" width="24" height="24"></a>
+                        </div>
+                        <ul class="news__list">
+                            <li><a href="./html/news-01.html">新商品「タルト・フランベ」発売のお知らせ<span class="news__contents-day">2025/01/30</span></a></li>
+                            <li><a href="./html/news-02.html">年末年始の休業のお知らせ<span class="news__contents-day">2024/12/22</span></a></li>
+                            <li><a href="./html/news-03.html">新商品「ガーリック・フランス」発売のお知らせ<span class="news__contents-day">2024/12/11</span></a></li>
+                            <li><a href="./html/news-04.html">11月の臨時休業のお知らせ<span class="news__contents-day">2024/10/28</span></a></li>
+                        </ul>
+                    </div>
+                    <a href="./html/news.html" class="primary-btn news__btn--tab">お知らせ一覧はこちら<img src="./images/arrow.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" width="24" height="24"></a>
                 </div>
             </section>
             <!-- news end -->
@@ -152,24 +150,24 @@
 
          <!-- footer -->
           <footer class="footer">
-            <div class="inner--small">
+            <div class="inner--s">
                 <div class="footer__contents">
-                    <div class="footer__contents-logo"><a href="index.html"><img src="./images/BA_Logo.svg" alt="Boulangerie Amande" width="239" height="76"></a></div>
+                    <div class="footer__contents-logo"><a href="index.html"><img src="./images/BA_Logo.svg" alt="Boulangerie Amande" width="239" height="76" loading="lazy" decoding="async"></a></div>
+                    <div class="footer__message">
+                        <h2 class="footer__message-ttl">本場の味を、あなたの毎日に</h2>
+                        <p class="footer__message-body">
+                            フランスの伝統レシピを守りながら、素材選びから発酵・焼き上げまで一つひとつに手間と心をかけています。<br>
+                            クロワッサンやバゲットなどの定番から、旬の食材を使った季節限定パンまで、日常に寄り添う豊かな味わいをお届けします。<br>
+                            Boulangerie Amande は、あなたの毎日に小さな幸せと、パリの街角を思わせる香りをそっと添えます。
+                        </p>
+                    </div>
                     <ul class="footer__contents-nav">
                         <li><a href="./html/commitment.html">私たちのこだわり</a></li>
                         <li><a href="./html/selection.html">メニュー</a></li>
-                        <li><a href="./html/information.html">店舗情報</a></li>
+                        <li><a href="#information">店舗情報</a></li>
                         <li><a href="./html/news.html">お知らせ</a></li>
                         <li><a href="./html/contact.html">お問い合わせ</a></li>
                     </ul>
-                    <div class="footer__contents-sns">
-                        <p class="footer__sns-ttl">SNS</p>
-                        <ul class="footer__sns-list">
-                            <li><a href="./html/commingsoon.html">Instagram</a></li>
-                            <li><a href="./html/commingsoon.html">LINE@</a></li>
-                            <li><a href="./html/commingsoon.html">X（旧Twitter）</a></li>
-                        </ul>
-                    </div>
                 </div>
                 <p class="footer__copyright">copyright 2025 BoulangeryAmande All Rights Reserved.</p>
             </div>
