@@ -390,6 +390,7 @@ select:focus {
   margin: 0 auto;
   max-width: 1280px;
   padding: 0 40px;
+  width: 100%;
 }
 @media (max-width: 768px) {
   .inner--s {
@@ -398,6 +399,7 @@ select:focus {
 }
 
 .inner--l {
+  width: 100%;
   margin: 0 auto;
   max-width: 1360px;
   padding: 0 40px;
@@ -571,44 +573,15 @@ select:focus {
 }
 
 .keyvisual__content {
-  flex: 3;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 240px 0px 240px 120px;
-  height: 90vh;
-}
-@media (max-width: 992px) {
-  .keyvisual__content {
-    padding-left: 80px;
-  }
-}
-@media (max-width: 768px) {
-  .keyvisual__content {
-    padding-left: 0px;
-    padding-right: 0px;
-    flex: 3;
-  }
-}
-
-.keyvisual__content-inner {
-  position: absolute;
-  top: 240px;
-  z-index: 10;
-}
-@media (max-width: 992px) {
-  .keyvisual__content-inner {
-    padding: 0 20px;
-  }
+  padding-top: 200px;
+  padding-bottom: 120px;
 }
 
 .keyvisual__ttl {
-  font-size: 72px;
-  letter-spacing: 0.2em;
-  line-height: 1.5;
-  font-weight: normal;
+  margin-bottom: 20px;
 }
 .keyvisual__ttl img {
+  max-width: 625px;
   width: 100%;
   height: auto;
 }
@@ -617,7 +590,21 @@ select:focus {
   font-size: 16px;
   letter-spacing: 0.15em;
   line-height: 2;
-  margin-bottom: 80px;
+  margin-bottom: 64px;
+}
+
+.keyvisual__bg {
+  position: absolute;
+  display: flex;
+  top: 0;
+  height: 90vh;
+  z-index: -10;
+  width: 100%;
+}
+
+.keyvisual__bgb {
+  flex: 3;
+  background-color: #101010;
 }
 
 .keyvisual__bgi {
@@ -1577,6 +1564,7 @@ textarea {
   font-size: 18px;
   margin-bottom: 16px;
   line-height: 2;
+  font-family: "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "MS Pゴシック", "MS PGothic", sans-serif;
 }
 @media (max-width: 768px) {
   .commitment__contents-description--detail {
@@ -1676,6 +1664,7 @@ textarea {
   font-size: 16px;
   line-height: 1.7;
   letter-spacing: 0.02em;
+  font-family: "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "MS Pゴシック", "MS PGothic", sans-serif;
 }
 @media (max-width: 768px) {
   .selection__card-description--detail {
