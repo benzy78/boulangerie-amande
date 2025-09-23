@@ -1,9 +1,6 @@
 .article{
-  padding: 24px 24px 64px;
+  padding: 24px 0px 64px;
   background-color: $bc-light-glay;
-  @include sp{
-    padding: 24px 16px;
-  }
 }
 .article__label{
   margin-bottom: 24px;

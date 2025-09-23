@@ -547,7 +547,7 @@ select:focus {
 }
 @media (max-width: 768px) {
   .section__ttl--detail {
-    font-size: 24px;
+    font-size: 28px;
     margin-bottom: 24px;
   }
 }
@@ -1023,6 +1023,7 @@ select:focus {
   line-height: 1.3;
   font-family: "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "MS Pゴシック", "MS PGothic", sans-serif;
   display: flex;
+  color: #ffffff;
   align-items: center;
   gap: 8px;
 }
@@ -1473,7 +1474,7 @@ textarea {
 }
 @media (max-width: 768px) {
   .commitment--detail {
-    padding: 24px 24px 48px;
+    padding: 24px 0 48px;
   }
 }
 
@@ -1593,7 +1594,7 @@ textarea {
 }
 
 .selection--detail {
-  padding: 48px 24px;
+  padding: 48px 0px;
   position: relative;
 }
 
@@ -1847,7 +1848,7 @@ textarea {
 }
 
 .news--detail {
-  padding: 48px 24px 64px;
+  padding: 48px 0 64px;
   background-color: #f7f7f7;
 }
 
@@ -1922,13 +1923,8 @@ textarea {
 }
 
 .article {
-  padding: 24px 24px 64px;
+  padding: 24px 0px 64px;
   background-color: #f7f7f7;
-}
-@media (max-width: 768px) {
-  .article {
-    padding: 24px 16px;
-  }
 }
 
 .article__label {
